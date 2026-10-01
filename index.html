@@ -1,10 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finara Bank - Tu aliado financiero</title>
+    <link rel="stylesheet" href="Frontend/styles/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- Header / Barra de Navegación -->
+<header class="navbar">
+    <div class="nav-container">
+        <div class="logo-container">
+            <img src="Frontend/styles/images/logo.png" alt="Finara Bank Logo" class="logo-img">
+            <span class="logo-text">Finara Bank</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#contactanos">Contactanos</a>
+        </nav>
+        <div class="nav-action">
+            <a href="pages/login.html" class="btn-login">
+                <span class="user-icon">👤</span> Iniciar sesión
+            </a>
+        </div>
+    </div>
+</header>
 
+<!-- Main Hero: Un solo contenedor con la imagen de fondo ocupando todo el ancho -->
+<main class="main-hero">
+    <!-- Contenedor principal del Banner con Z-Index -->
+    <div class="hero-banner-wrapper">
+        <!-- Imagen de fondo que ocupa todo el ancho (Z-index bajo) -->
+        <img src="Frontend/styles/images/banner.png" alt="Finara Bank Banner" class="hero-bg-img">
+        <!-- Contenido superpuesto encima del banner (Z-index alto) -->
+        <div class="hero-overlay-content">
+            <div class="hero-text-side">
+                <div class="badge-aliado">
+                    <span class="badge-icon">🛡️</span> Tu aliado financiero
+                </div>
+                <h1>Tu dinero,<br>mejores decisiones</h1>
+                <p>Finara Bank es más que un banco, es tu aliado financiero. Te ayudamos a controlar, planear y hacer crecer tu dinero con herramientas inteligentes.</p>
+                <div class="hero-buttons">
+                    <a href="pages/signUp.html" class="btn-comenzar">Comenzar ahora &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Beneficios Mejorada (Tarjetas tipo cuadro con mejor proporción) -->
+    <section class="features-section" id="beneficios">
+        <div class="section-title">
+            <h2>Todo lo que necesitas para tu tranquilidad</h2>
+            <p>Diseñado para simplificar tu día a día financiero.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon-circle">🛡️</div>
+                <h3>Control total</h3>
+                <p>Controla tus gastos y presupuestos en tiempo real de forma segura.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-circle">📊</div>
+                <h3>Créditos transparentes</h3>
+                <p>Simula tus créditos con total transparencia y sin letras pequeñas.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-circle">💰</div>
+                <h3>Metas de ahorro</h3>
+                <p>Haz crecer tu dinero alcanzando tus metas de ahorro programadas.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-circle">📈</div>
+                <h3>Alertas inteligentes</h3>
+                <p>Recibe alertas y recomendaciones financieras personalizadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Extra para rellenar el espacio de forma atractiva -->
+    <section class="promo-banner">
+        <div class="promo-content">
+            <h2>¿Listo para dar el siguiente paso?</h2>
+            <p>Únete a miles de usuarios que ya transformaron su manera de gestionar sus finanzas.</p>
+            <a href="pages/signUp.html" class="btn-promo">Crear cuenta gratis</a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Falso Institucional con datos de contacto -->
+<footer class="site-footer" id="contactanos">
+    <div class="footer-container">
+        <div class="footer-col">
+            <div class="logo-container footer-logo">
+                <img src="Frontend/styles/images/logo.png" alt="Finara Bank Logo" class="logo-img">
+                <span class="logo-text">Finara Bank</span>
+            </div>
+            <p class="footer-desc">Tu aliado financiero inteligente para construir el futuro que te mereces.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Contacto Directo</h4>
+            <p>📞 Teléfono: +57 (604) 489-9200</p>
+            <p>📱 WhatsApp Soporte: +57 312 456 7890</p>
+            <p>✉️ Correo: soporte@finarabank-falso.com</p>
+        </div>
+        <div class="footer-col">
+            <h4>Enlaces Útiles</h4>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Seguridad Bancaria</a>
+            <a href="#">Preguntas Frecuentes</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Finara Bank (Simulación Académica). Todos los derechos reservados.</p>
+    </div>
+</footer>
 </body>
 </html>
