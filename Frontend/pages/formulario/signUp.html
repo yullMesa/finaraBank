@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta - Finara Bank</title>
+    <link rel="stylesheet" href="../../styles/css/formulario/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="signup-container">
+    <!-- Columna Izquierda: Imagen / Banner institucional -->
+    <div class="signup-image-side">
+        <img src="../../styles/images/formulario.png" alt="Finara Bank Banner" class="side-banner-img">
+    </div>
+
+    <!-- Columna Derecha: Formulario de Registro -->
+    <div class="signup-form-side">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h2>Crear tu cuenta en Finara Bank</h2>
+                <p>Es rápido, seguro y te da acceso a todos nuestros servicios.</p>
+            </div>
+
+            <form class="signup-form" action="#" method="POST">
+                <!-- Nombre Completo -->
+                <div class="input-group">
+                    <label for="nombre">Nombre completo</label>
+                    <div class="input-field-wrapper">
+                        <span class="input-icon">👤</span>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: María López" required>
+                    </div>
+                </div>
+
+                <!-- Correo Electrónico -->
+                <div class="input-group">
+                    <label for="email">Correo electrónico</label>
+                    <div class="input-field-wrapper">
+                        <span class="input-icon">✉️</span>
+                        <input type="email" id="email" name="email" placeholder="Ej: maria@correo.com" required>
+                    </div>
+                </div>
+
+                <!-- Número de Documento -->
+                <div class="input-group">
+                    <label for="documento">Número de documento</label>
+                    <div class="input-field-wrapper">
+                        <span class="input-icon">📄</span>
+                        <input type="text" id="documento" name="documento" placeholder="Ej: 1.234.567.890" required>
+                    </div>
+                </div>
+
+                <!-- Teléfono Celular -->
+                <div class="input-group">
+                    <label for="telefono">Teléfono celular</label>
+                    <div class="input-field-wrapper">
+                        <span class="input-icon">📞</span>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 300 123 4567" required>
+                    </div>
+                </div>
+
+                <!-- Fecha de Nacimiento -->
+                <div class="input-group">
+                    <label for="nacimiento">Fecha de nacimiento</label>
+                    <div class="input-field-wrapper">
+                        <span class="input-icon">📅</span>
+                        <input type="text" id="nacimiento" name="nacimiento" placeholder="dd/mm/aaaa" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                    </div>
+                </div>
+
+                <!-- Contraseña -->
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <div class="input-field-wrapper">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="password" name="password" placeholder="Minimo 8 caracteres" required>
+                        <span class="toggle-password">👁️</span>
+                    </div>
+                </div>
+
+                <!-- Términos y Condiciones -->
+                <div class="terms-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        Acepto los <a href="#" class="terms-link">términos y condiciones</a>
+                    </label>
+                </div>
+
+                <!-- Botón Registrarse -->
+                <button type="submit" class="btn-submit">Registrarse &rarr;</button>
+
+                <!-- Enlace a Login -->
+                <div class="form-footer-link">
+                    <p>¿Ya tienes una cuenta? <a href="../login.html">Inicia sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
